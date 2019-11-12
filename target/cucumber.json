@@ -1,0 +1,928 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login with correct credentials",
+        "description": "",
+        "id": "application-login;login-with-correct-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 204184970,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6855874780,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Login page",
+            "match": {
+              "location": "StepDefination.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 514789052,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User login into application with username shivani.arora.3@warwickgrad.net and password Hudl@1234",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivani.arora.3@warwickgrad.net",
+                  "offset": 42
+                },
+                {
+                  "val": "Hudl@1234",
+                  "offset": 87
+                }
+              ],
+              "location": "StepDefination.user_login_into_application_with_incorrect_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21874515,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is redirected to Home Page",
+            "match": {
+              "location": "StepDefination.user_is_redirected_to_home_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3082247780,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Initial \"SA\" is populated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SA",
+                  "offset": 14
+                }
+              ],
+              "location": "StepDefination.user_initial_something_is_populated(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@RegTest"
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Login with incorrect credentials",
+        "description": "",
+        "id": "application-login;login-with-incorrect-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 129686940,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5066024286,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on Login page",
+            "match": {
+              "location": "StepDefination.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 611184198,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User login into application with username shivani.arora.3@warwickgrad.net and password pass1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivani.arora.3@warwickgrad.net",
+                  "offset": 42
+                },
+                {
+                  "val": "pass1",
+                  "offset": 87
+                }
+              ],
+              "location": "StepDefination.user_login_into_application_with_incorrect_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 834730577,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Error Message \"We didn\u0027t recognize that email and/or password. Need help?\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "We didn\u0027t recognize that email and/or password. Need help?",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.error_message_something_is_displayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28387229,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Log In button is disabled",
+            "match": {
+              "location": "StepDefination.log_in_button_is_disabled()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@RegTest"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Login with incorrect credentials",
+        "description": "",
+        "id": "application-login;login-with-incorrect-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 127485450,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5612510813,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on Login page",
+            "match": {
+              "location": "StepDefination.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 479089016,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User login into application with username shivani.arora@gmail.com and password Hudl@1234",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivani.arora@gmail.com",
+                  "offset": 42
+                },
+                {
+                  "val": "Hudl@1234",
+                  "offset": 79
+                }
+              ],
+              "location": "StepDefination.user_login_into_application_with_incorrect_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1319617148,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Error Message \"We didn\u0027t recognize that email and/or password. Need help?\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "We didn\u0027t recognize that email and/or password. Need help?",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.error_message_something_is_displayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19624993,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Log In button is disabled",
+            "match": {
+              "location": "StepDefination.log_in_button_is_disabled()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@RegTest"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Login with incorrect credentials",
+        "description": "",
+        "id": "application-login;login-with-incorrect-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 139294102,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9455132689,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on Login page",
+            "match": {
+              "location": "StepDefination.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 378820841,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User login into application with username user3 and password pass3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user3",
+                  "offset": 42
+                },
+                {
+                  "val": "pass3",
+                  "offset": 61
+                }
+              ],
+              "location": "StepDefination.user_login_into_application_with_incorrect_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1292423539,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Error Message \"We didn\u0027t recognize that email and/or password. Need help?\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "We didn\u0027t recognize that email and/or password. Need help?",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefination.error_message_something_is_displayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19731067,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Log In button is disabled",
+            "match": {
+              "location": "StepDefination.log_in_button_is_disabled()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@RegTest"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Login and remember user credentials",
+        "description": "",
+        "id": "application-login;login-and-remember-user-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 183862334,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5221383268,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User is on Login page",
+            "match": {
+              "location": "StepDefination.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 476168330,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User login into application with username shivani.arora.3@warwickgrad.net and password Hudl@1234",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivani.arora.3@warwickgrad.net",
+                  "offset": 42
+                },
+                {
+                  "val": "Hudl@1234",
+                  "offset": 87
+                }
+              ],
+              "location": "StepDefination.user_login_into_application_with_incorrect_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 144456748,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "checks remember me",
+            "match": {
+              "location": "StepDefination.checks_remember_me()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2926863882,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User logs Out of the application",
+            "match": {
+              "location": "StepDefination.user_logs_out_of_the_application()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 609729678,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User logs in again",
+            "match": {
+              "location": "StepDefination.user_logs_in_again()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 348739374,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Hudl@1234]\u003e but was:\u003c[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat stepDefination.StepDefination.user_email_something_and_password_something_should_be_autopopulated(StepDefination.java:107)\n\tat ✽.Then User Email \"shivani.arora.3@warwickgrad.net\" and Password \"Hudl@1234\" should be autopopulated(Login.feature:30)\n",
+              "status": "failed"
+            },
+            "line": 30,
+            "name": "User Email \"shivani.arora.3@warwickgrad.net\" and Password \"Hudl@1234\" should be autopopulated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivani.arora.3@warwickgrad.net",
+                  "offset": 12
+                },
+                {
+                  "val": "Hudl@1234",
+                  "offset": 59
+                }
+              ],
+              "location": "StepDefination.user_email_something_and_password_something_should_be_autopopulated(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@RegTest"
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Login and doesnot remember user credentials",
+        "description": "",
+        "id": "application-login;login-and-doesnot-remember-user-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 201550071,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5163586738,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User is on Login page",
+            "match": {
+              "location": "StepDefination.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 503796181,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User login into application with username shivani.arora.3@warwickgrad.net and password Hudl@1234",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivani.arora.3@warwickgrad.net",
+                  "offset": 42
+                },
+                {
+                  "val": "Hudl@1234",
+                  "offset": 87
+                }
+              ],
+              "location": "StepDefination.user_login_into_application_with_incorrect_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3318738252,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User logs Out of the application",
+            "match": {
+              "location": "StepDefination.user_logs_out_of_the_application()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 414694892,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User logs in again",
+            "match": {
+              "location": "StepDefination.user_logs_in_again()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 321962235,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[]\u003e but was:\u003c[shivani.arora.3@warwickgrad.net]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat stepDefination.StepDefination.user_email_and_password_should_be_blank(StepDefination.java:116)\n\tat ✽.Then User Email and Password should be blank(Login.feature:38)\n",
+              "status": "failed"
+            },
+            "line": 38,
+            "name": "User Email and Password should be blank",
+            "match": {
+              "location": "StepDefination.user_email_and_password_should_be_blank()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@RegTest"
+          }
+        ]
+      },
+      {
+        "line": 41,
+        "name": "Remember Me should be deselected by default",
+        "description": "",
+        "id": "application-login;remember-me-should-be-deselected-by-default",
+        "after": [
+          {
+            "result": {
+              "duration": 97692933,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5317867978,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User is on Login page",
+            "match": {
+              "location": "StepDefination.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 48267450,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Remember Me should be deselected",
+            "match": {
+              "location": "StepDefination.remember_me_should_be_deselected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 40,
+            "name": "@RegTest"
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "User email should be populated on Need Help text box",
+        "description": "",
+        "id": "application-login;user-email-should-be-populated-on-need-help-text-box",
+        "after": [
+          {
+            "result": {
+              "duration": 172087865,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6047613032,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User is on Login page",
+            "match": {
+              "location": "StepDefination.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 377323276,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User enters username \"shivani.arora.3@warwickgrad.net\" and clicks Need Help",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivani.arora.3@warwickgrad.net",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefination.user_enters_username_something_and_clicks_need_help(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 676677326,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User is redirected to Reset password page",
+            "match": {
+              "location": "StepDefination.user_is_redirected_to_reset_password_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 42382925,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User email \"shivani.arora.3@warwickgrad.net\" is pre poulated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivani.arora.3@warwickgrad.net",
+                  "offset": 12
+                }
+              ],
+              "location": "StepDefination.user_email_is_pre_poulated(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 45,
+            "name": "@RegTest"
+          }
+        ]
+      },
+      {
+        "line": 53,
+        "name": "User resets password",
+        "description": "",
+        "id": "application-login;user-resets-password",
+        "after": [
+          {
+            "result": {
+              "duration": 123434778,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9259000895,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User is on Login page",
+            "match": {
+              "location": "StepDefination.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 942749616,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User enters username \"shivani.arora.3@warwickgrad.net\" and clicks Need Help",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivani.arora.3@warwickgrad.net",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefination.user_enters_username_something_and_clicks_need_help(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 265155123,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User Clicks Reset Password",
+            "match": {
+              "location": "StepDefination.user_clicks_reset_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 592695421,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Reset Password Confirmation is displayed",
+            "match": {
+              "location": "StepDefination.reset_password_confirmation_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 52,
+            "name": "@RegTest"
+          }
+        ]
+      },
+      {
+        "line": 60,
+        "name": "Login Button is enables when user starts entering password",
+        "description": "",
+        "id": "application-login;login-button-is-enables-when-user-starts-entering-password",
+        "after": [
+          {
+            "result": {
+              "duration": 130948455,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSeleniumTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5291777185,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "User is on Login page",
+            "match": {
+              "location": "StepDefination.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 506116467,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "User login into application with username shivani.arora.3@warwickgrad.net and password Hudl@1234",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shivani.arora.3@warwickgrad.net",
+                  "offset": 42
+                },
+                {
+                  "val": "Hudl@1234",
+                  "offset": 87
+                }
+              ],
+              "location": "StepDefination.user_login_into_application_with_incorrect_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22642434,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "Log In button is disabled",
+            "match": {
+              "location": "StepDefination.log_in_button_is_disabled()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89679790,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "User enters password \"Hudl@1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Hudl@1234",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefination.user_enters_password_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22941981,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "Login button is Enabled",
+            "match": {
+              "location": "StepDefination.login_button_is_enabled()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 59,
+            "name": "@RegTest"
+          }
+        ]
+      }
+    ],
+    "name": "Application Login",
+    "description": "",
+    "id": "application-login",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]

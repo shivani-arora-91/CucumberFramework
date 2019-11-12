@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: cucumberOptions.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 52, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 87.09 sec <<< FAILURE!
+Then User Email "shivani.arora.3@warwickgrad.net" and Password "Hudl@1234" should be autopopulated(Scenario: Login and remember user credentials)  Time elapsed: 0.005 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Hudl@1234]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefination.StepDefination.user_email_something_and_password_something_should_be_autopopulated(StepDefination.java:107)
+	at ✽.Then User Email "shivani.arora.3@warwickgrad.net" and Password "Hudl@1234" should be autopopulated(Login.feature:30)
+
+Scenario: Login and remember user credentials  Time elapsed: 0.005 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Hudl@1234]> but was:<[]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefination.StepDefination.user_email_something_and_password_something_should_be_autopopulated(StepDefination.java:107)
+	at ✽.Then User Email "shivani.arora.3@warwickgrad.net" and Password "Hudl@1234" should be autopopulated(Login.feature:30)
+
+Then User Email and Password should be blank(Scenario: Login and doesnot remember user credentials)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[shivani.arora.3@warwickgrad.net]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefination.StepDefination.user_email_and_password_should_be_blank(StepDefination.java:116)
+	at ✽.Then User Email and Password should be blank(Login.feature:38)
+
+Scenario: Login and doesnot remember user credentials  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[shivani.arora.3@warwickgrad.net]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefination.StepDefination.user_email_and_password_should_be_blank(StepDefination.java:116)
+	at ✽.Then User Email and Password should be blank(Login.feature:38)
+
